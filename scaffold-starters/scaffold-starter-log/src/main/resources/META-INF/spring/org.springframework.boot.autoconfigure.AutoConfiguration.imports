@@ -1,0 +1,2 @@
+com.chaoxing.scaffold.autoconfigure.log.AccessLogAutoConfiguration
+com.chaoxing.scaffold.autoconfigure.log.TraceIdAutoConfiguration

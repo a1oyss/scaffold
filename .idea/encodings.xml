@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/quick-start-starters/quick-start-starter-springdoc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quick-start-starters/quick-start-starter-springdoc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-desensitize/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-desensitize/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-encrypt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-encrypt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-idempont/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-idempont/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-idempotent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-idempotent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/scaffold-common-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-encrypt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-encrypt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-idempotent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-idempotent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-springdoc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-springdoc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/scaffold-starter-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scaffold-starters/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

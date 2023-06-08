@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+      com.chaoxing.scaffold.autoconfigure.log.AccessLogAutoConfiguration,\
+      com.chaoxing.scaffold.autoconfigure.log.TraceIdAutoConfiguration
+
