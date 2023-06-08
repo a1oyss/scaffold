@@ -37,7 +37,7 @@ public class Result<T> {
     }
 
     public static <T> Result<T> failed(String msg) {
-        return failed(ResultEnum.SERVER_ERROR, null);
+        return failed(ResultEnum.SERVER_ERROR, msg);
     }
 
     public static <T> Result<T> failed(ResultEnum resultEnum, String msg) {
