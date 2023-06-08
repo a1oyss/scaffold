@@ -16,6 +16,8 @@
         <module>scaffold-starter-web</module>
         <module>scaffold-starter-idempotent</module>
         <module>scaffold-starter-encrypt</module>
+        <module>scaffold-starter-httpclient</module>
+        <module>scaffold-starter-xss</module>
     </modules>
 
 

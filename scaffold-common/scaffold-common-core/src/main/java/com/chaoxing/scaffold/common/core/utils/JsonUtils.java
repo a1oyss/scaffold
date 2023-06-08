@@ -1,9 +1,7 @@
 package com.chaoxing.scaffold.common.core.utils;
 
-import com.chaoxing.quickstart.common.core.utils.json.*;
 import com.chaoxing.scaffold.common.core.utils.json.*;
-import com.chaoxing.scaffold.common.utils.json.*;
-import com.chaoxing.scaffold.starter.common.utils.json.*;
+
 import lombok.Getter;
 
 import java.lang.reflect.Type;

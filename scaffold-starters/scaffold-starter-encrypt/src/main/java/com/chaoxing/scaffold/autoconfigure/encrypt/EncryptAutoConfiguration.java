@@ -13,13 +13,13 @@ import org.springframework.context.annotation.Bean;
 @AutoConfiguration
 public class EncryptAutoConfiguration {
     @Bean
-    @ConditionalOnMissingBean
+    @ConditionalOnMissingBean(MybatisDecryptInterceptor.class)
     public MybatisDecryptInterceptor mybatisDecryptInterceptor(){
         return new MybatisDecryptInterceptor();
     }
 
     @Bean
-    @ConditionalOnMissingBean
+    @ConditionalOnMissingBean(MybatisEncryptInterceptor.class)
     public MybatisEncryptInterceptor mybatisEncryptInterceptor(){
         return new MybatisEncryptInterceptor();
     }

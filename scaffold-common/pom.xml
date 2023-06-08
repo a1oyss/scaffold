@@ -16,6 +16,7 @@
         <module>scaffold-common-log</module>
         <module>scaffold-common-idempotent</module>
         <module>scaffold-common-encrypt</module>
+        <module>scaffold-common-xss</module>
     </modules>
 
 

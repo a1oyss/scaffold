@@ -1,0 +1,2 @@
+com.chaoxing.scaffold.autoconfigure.httpclient.config.OkHttpClientAutoConfiguration
+com.chaoxing.scaffold.autoconfigure.httpclient.config.RestTemplateAutoConfiguration

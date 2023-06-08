@@ -28,7 +28,7 @@ public class IdempotentAutoConfiguration {
 	 * @return 幂等Key生成器
 	 */
 	@Bean
-	@ConditionalOnMissingBean
+	@ConditionalOnMissingBean(IdempotentKeyGenerator.class)
 	public IdempotentKeyGenerator idempotentKeyGenerator() {
 		return new DefaultIdempotentKeyGenerator();
 	}
@@ -39,7 +39,7 @@ public class IdempotentAutoConfiguration {
 	 * @return 幂等Key存储
 	 */
 	@Bean
-	@ConditionalOnMissingBean
+	@ConditionalOnMissingBean(IdempotentKeyStore.class)
 	public IdempotentKeyStore idempotentKeyStore(IdempotentProperties properties) {
 		IdempotentProperties.KeyStoreType keyStoreType = properties.getKeyStoreType();
 		if (keyStoreType.equals(IdempotentProperties.KeyStoreType.REDIS)) {

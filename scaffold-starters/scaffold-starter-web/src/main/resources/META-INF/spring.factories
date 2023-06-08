@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.chaoxing.scaffold.autoconfigure.web.jackson.CustomJacksonAutoConfiguration,\
+    com.chaoxing.scaffold.autoconfigure.web.exception.ExceptionAutoConfiguration
+
+org.springframework.context.ApplicationListener=\
+  com.chaoxing.scaffold.autoconfigure.web.event.ApplicationContextInitialized

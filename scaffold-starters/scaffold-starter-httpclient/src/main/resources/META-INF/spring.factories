@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+      com.chaoxing.scaffold.autoconfigure.httpclient.config.OkHttpClientAutoConfiguration,\
+      com.chaoxing.scaffold.autoconfigure.httpclient.config.RestTemplateAutoConfiguration
+
