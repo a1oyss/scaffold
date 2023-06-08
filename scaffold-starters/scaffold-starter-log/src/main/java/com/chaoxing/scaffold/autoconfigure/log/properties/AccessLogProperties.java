@@ -10,7 +10,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = AccessLogProperties.PREFIX)
 public class AccessLogProperties {
 
-    public static final String PREFIX = "project.log.access";
+    public static final String PREFIX = "scaffold.log.access";
 
     /**
      * 开启 access log 的记录
