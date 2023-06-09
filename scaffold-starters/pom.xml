@@ -18,6 +18,7 @@
         <module>scaffold-starter-encrypt</module>
         <module>scaffold-starter-httpclient</module>
         <module>scaffold-starter-xss</module>
+        <module>scaffold-starter-springdoc</module>
     </modules>
 
 

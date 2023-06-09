@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.chaoxing.scaffold.autoconfigure.springdoc.OpenApiAutoConfiguration
+
+# Environment Post Processor
+org.springframework.boot.env.EnvironmentPostProcessor=\
+    com.chaoxing.scaffold.autoconfigure.springdoc.OpenApiStatusReplaceEnvironmentPostProcessor

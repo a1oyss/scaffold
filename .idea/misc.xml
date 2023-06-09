@@ -15,7 +15,6 @@
         <option value="$PROJECT_DIR$/scaffold-common/scaffold-common-idempont/pom.xml" />
         <option value="$PROJECT_DIR$/scaffold-starters/scaffold-common-xss/pom.xml" />
         <option value="$PROJECT_DIR$/scaffold-starters/scaffold-starter-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/scaffold-starters/scaffold-starter-springdoc/pom.xml" />
       </set>
     </option>
   </component>
