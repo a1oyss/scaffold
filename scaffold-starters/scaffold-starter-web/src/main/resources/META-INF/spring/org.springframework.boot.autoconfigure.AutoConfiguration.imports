@@ -1,2 +1,2 @@
-    com.chaoxing.scaffold.autoconfigure.web.jackson.CustomJacksonAutoConfiguration
-    com.chaoxing.scaffold.autoconfigure.web.exception.ExceptionAutoConfiguration
+com.chaoxing.scaffold.autoconfigure.web.jackson.CustomJacksonAutoConfiguration
+com.chaoxing.scaffold.autoconfigure.web.exception.ExceptionAutoConfiguration

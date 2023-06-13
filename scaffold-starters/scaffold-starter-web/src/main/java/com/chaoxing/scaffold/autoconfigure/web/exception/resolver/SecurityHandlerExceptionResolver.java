@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @Order(-1000)
 @Slf4j
-@RequiredArgsConstructor
 @RestControllerAdvice
 public class SecurityHandlerExceptionResolver {
 	/**
