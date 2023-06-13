@@ -1,4 +1,4 @@
-package com.chaoxing.quickstart.common.log.constants;
+package com.chaoxing.common.log.constants;
 
 /**
  * 日志常量

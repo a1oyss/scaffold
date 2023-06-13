@@ -1,12 +1,13 @@
-package com.chaoxing.quickstart.common.log.filter;
+package com.chaoxing.common.log.filter;
 
-import com.chaoxing.quickstart.common.log.constants.LogConstants;
-import com.chaoxing.quickstart.common.log.handler.AccessLogHandler;
+import com.chaoxing.common.log.constants.LogConstants;
+import com.chaoxing.common.log.handler.AccessLogHandler;
 import com.chaoxing.scaffold.common.core.request.RepeatBodyRequestWrapper;
 import com.chaoxing.scaffold.common.core.utils.LogUtils;
 import com.google.common.base.Stopwatch;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingResponseWrapper;
@@ -25,6 +26,7 @@ import java.util.List;
  * @since 2023/06/01
  */
 public class AccessLogFilter extends OncePerRequestFilter {
+	@Autowired
 	private AccessLogHandler<?> accessLogService;
 	private List<String> ignoreUrlPatterns;
 

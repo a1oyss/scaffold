@@ -1,13 +1,12 @@
 package com.chaoxing.scaffold.autoconfigure.log;
 
+import com.chaoxing.scaffold.autoconfigure.log.logImpl.DefaultAccessLogHandlerImpl;
 import com.chaoxing.scaffold.autoconfigure.log.properties.AccessLogProperties;
-import com.chaoxing.quickstart.common.log.filter.AccessLogFilter;
-import com.chaoxing.quickstart.common.log.handler.AccessLogHandler;
+import com.chaoxing.common.log.filter.AccessLogFilter;
+import com.chaoxing.common.log.handler.AccessLogHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
+import org.springframework.boot.autoconfigure.condition.*;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -23,23 +22,32 @@ import org.springframework.context.annotation.Bean;
 @EnableConfigurationProperties(AccessLogProperties.class)
 @ConditionalOnProperty(prefix = AccessLogProperties.PREFIX, name = "enabled", matchIfMissing = true, havingValue = "true")
 public class AccessLogAutoConfiguration {
-    private final AccessLogHandler<?> accessLogService;
     private final AccessLogProperties accessLogProperties;
 
     @Bean
-    @ConditionalOnBean(AccessLogHandler.class)
+    @ConditionalOnClass(AccessLogHandler.class)
     public FilterRegistrationBean<AccessLogFilter> accessLogFilterRegistrationBean() {
         log.debug("access log 记录拦截器已开启====");
         FilterRegistrationBean<AccessLogFilter> registrationBean = new FilterRegistrationBean<>();
-        AccessLogFilter accessLogFilter = new AccessLogFilter();
-        accessLogFilter.setAccessLogService(accessLogService);
-        accessLogFilter.setIgnoreUrlPatterns(accessLogProperties.getIgnoreUrlPatterns());
+        registrationBean.setFilter(accessLogFilter());
         registrationBean.setOrder(-1000);
         return registrationBean;
     }
 
-    public AccessLogAutoConfiguration(AccessLogHandler<?> accessLogService, AccessLogProperties accessLogProperties) {
-        this.accessLogService = accessLogService;
+    public AccessLogAutoConfiguration(AccessLogProperties accessLogProperties) {
         this.accessLogProperties = accessLogProperties;
+    }
+
+    @Bean
+    public AccessLogFilter accessLogFilter(){
+        AccessLogFilter accessLogFilter = new AccessLogFilter();
+        accessLogFilter.setIgnoreUrlPatterns(accessLogProperties.getIgnoreUrlPatterns());
+        return accessLogFilter;
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public AccessLogHandler<?> accessLogHandler(){
+        return new DefaultAccessLogHandlerImpl();
     }
 }

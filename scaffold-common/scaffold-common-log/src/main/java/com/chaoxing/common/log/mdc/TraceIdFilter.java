@@ -1,7 +1,7 @@
-package com.chaoxing.quickstart.common.log.mdc;
+package com.chaoxing.common.log.mdc;
 
 import cn.hutool.core.util.IdUtil;
-import com.chaoxing.quickstart.common.log.constants.LogConstants;
+import com.chaoxing.common.log.constants.LogConstants;
 import org.slf4j.MDC;
 import org.springframework.web.filter.OncePerRequestFilter;
 

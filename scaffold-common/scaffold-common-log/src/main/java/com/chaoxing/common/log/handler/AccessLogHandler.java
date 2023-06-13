@@ -1,4 +1,4 @@
-package com.chaoxing.quickstart.common.log.handler;
+package com.chaoxing.common.log.handler;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
