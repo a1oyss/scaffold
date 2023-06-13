@@ -15,7 +15,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(IdempotentProperties.PREFIX)
 public class IdempotentProperties {
 
-	public static final String PREFIX = "ballcat.idempotent";
+	public static final String PREFIX = "scaffold.idempotent";
 
 	private KeyStoreType keyStoreType = KeyStoreType.MEMORY;
 
