@@ -4,6 +4,7 @@ import com.chaoxing.scaffold.common.core.entity.Result;
 import com.chaoxing.scaffold.common.core.enums.ResultEnum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Order(-1000)
 @Slf4j
 @RestControllerAdvice
+@ConditionalOnClass(AccessDeniedException.class)
 public class SecurityHandlerExceptionResolver {
 	/**
 	 * AccessDeniedException

@@ -28,7 +28,6 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON;
  * @since 2023/6/13
  */
 @Slf4j
-@Service
 public class DefaultAccessLogHandlerImpl implements AccessLogHandler<AccessLog> {
     @Override
     public AccessLog buildLog(HttpServletRequest request, HttpServletResponse response, String executionTime, Throwable throwable) {

@@ -26,7 +26,6 @@ import java.util.List;
  * @since 2023/06/01
  */
 public class AccessLogFilter extends OncePerRequestFilter {
-	@Autowired
 	private AccessLogHandler<?> accessLogService;
 	private List<String> ignoreUrlPatterns;
 
