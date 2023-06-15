@@ -5,6 +5,7 @@ import cn.hutool.core.util.ObjectUtil;
 import com.chaoxing.common.encrypt.algorithm.Algorithm;
 import com.chaoxing.common.encrypt.annotation.Encrypt;
 import com.chaoxing.common.encrypt.context.EncryptContext;
+import com.chaoxing.common.encrypt.context.EncryptContextHolder;
 import com.chaoxing.common.encrypt.utils.FieldUtils;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -104,6 +105,7 @@ public class MybatisEncryptInterceptor implements Interceptor {
         encryptContext.setSecret(encryptField.secret());
         encryptContext.setPrivateKey(encryptField.privateKey());
         encryptContext.setPublicKey(encryptField.publicKey());
+        EncryptContextHolder.setContext(encryptContext);
         Class<? extends Algorithm> algorithm = encryptField.algorithm();
         Algorithm algorithmInstance;
         algorithmInstance = (Algorithm) ReflectUtils.newInstance(algorithm);

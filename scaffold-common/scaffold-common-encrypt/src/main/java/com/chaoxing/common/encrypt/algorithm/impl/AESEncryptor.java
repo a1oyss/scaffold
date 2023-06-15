@@ -1,6 +1,7 @@
 package com.chaoxing.common.encrypt.algorithm.impl;
 
 
+import cn.hutool.core.util.HexUtil;
 import cn.hutool.crypto.Mode;
 import cn.hutool.crypto.Padding;
 import cn.hutool.crypto.symmetric.AES;
@@ -26,6 +27,6 @@ public class AESEncryptor implements Algorithm {
         String secret = context.getSecret();
 
         AES aes = new AES(Mode.ECB, Padding.PKCS5Padding,secret.getBytes(StandardCharsets.UTF_8));
-        return aes.decryptStr(value.getBytes(StandardCharsets.UTF_8));
+        return aes.decryptStr(HexUtil.decodeHex(value));
     }
 }
