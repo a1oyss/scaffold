@@ -19,6 +19,7 @@
         <module>scaffold-starter-httpclient</module>
         <module>scaffold-starter-xss</module>
         <module>scaffold-starter-springdoc</module>
+        <module>scaffold-starter-xxljob</module>
     </modules>
 
 
