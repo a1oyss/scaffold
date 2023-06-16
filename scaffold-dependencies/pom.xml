@@ -211,6 +211,11 @@
                 <artifactId>scaffold-starter-xxljob</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>com.chaoxing</groupId>
+                <artifactId>scaffold-starter-redis</artifactId>
+                <version>${revision}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
