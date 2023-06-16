@@ -14,7 +14,6 @@
       <set>
         <option value="$PROJECT_DIR$/scaffold-common/scaffold-common-idempont/pom.xml" />
         <option value="$PROJECT_DIR$/scaffold-starters/scaffold-common-xss/pom.xml" />
-        <option value="$PROJECT_DIR$/scaffold-starters/scaffold-starter-redis/pom.xml" />
       </set>
     </option>
   </component>

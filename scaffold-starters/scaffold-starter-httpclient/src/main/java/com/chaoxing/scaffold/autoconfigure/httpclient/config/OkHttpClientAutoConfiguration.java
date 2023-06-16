@@ -1,11 +1,9 @@
 package com.chaoxing.scaffold.autoconfigure.httpclient.config;
 
 import com.chaoxing.scaffold.autoconfigure.httpclient.properties.OkHttpClientProperties;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
