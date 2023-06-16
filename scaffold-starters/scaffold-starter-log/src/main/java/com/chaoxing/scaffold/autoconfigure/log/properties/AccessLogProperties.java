@@ -20,6 +20,19 @@ public class AccessLogProperties {
     /**
      * 忽略的Url匹配规则，Ant风格
      */
-    private List<String> ignoreUrlPatterns = Arrays.asList("/actuator/**", "/webjars/**", "/favicon.ico", "/swagger-ui/**");
+    private List<String> ignoreUrlPatterns = Arrays.asList(
+            "/actuator/**",
+            "/webjars/**",
+            "/swagger-ui/**",
+            "/*.html",
+            "/**/*.js",
+            "/**/*.css",
+            "/**/*.png",
+            "/**/*.jpg",
+            "/**/*.jpeg",
+            "/**/*.gif",
+            "/**/*.ico",
+            "/font/**"
+    );
 
 }

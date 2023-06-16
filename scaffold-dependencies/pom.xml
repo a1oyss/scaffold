@@ -25,6 +25,7 @@
         <io.swagger.v3.version>2.2.7</io.swagger.v3.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <mybatis.version>3.5.10</mybatis.version>
+        <druid.version>1.2.18</druid.version>
         <gson.version>2.10.1</gson.version>
         <fastjson.version>1.2.83</fastjson.version>
         <okhttp3.version>4.11.0</okhttp3.version>
@@ -79,6 +80,11 @@
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
