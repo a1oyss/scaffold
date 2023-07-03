@@ -1,6 +1,6 @@
 package com.chaoxing.scaffold.autoconfigure.log;
 
-import com.chaoxing.common.log.mdc.TraceIdFilter;
+import com.chaoxing.scaffold.common.log.mdc.TraceIdFilter;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

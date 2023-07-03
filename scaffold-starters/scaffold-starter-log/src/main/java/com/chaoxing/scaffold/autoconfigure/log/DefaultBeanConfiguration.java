@@ -1,6 +1,6 @@
 package com.chaoxing.scaffold.autoconfigure.log;
 
-import com.chaoxing.common.log.handler.AccessLogHandler;
+import com.chaoxing.scaffold.common.log.handler.AccessLogHandler;
 import com.chaoxing.scaffold.autoconfigure.log.logImpl.DefaultAccessLogHandlerImpl;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

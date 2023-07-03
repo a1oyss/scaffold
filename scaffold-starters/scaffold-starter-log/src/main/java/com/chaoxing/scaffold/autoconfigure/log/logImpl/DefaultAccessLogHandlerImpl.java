@@ -1,17 +1,14 @@
 package com.chaoxing.scaffold.autoconfigure.log.logImpl;
 
 import cn.hutool.core.util.URLUtil;
-import com.chaoxing.common.log.constants.LogConstants;
-import com.chaoxing.common.log.entity.AccessLog;
-import com.chaoxing.common.log.handler.AccessLogHandler;
+import com.chaoxing.scaffold.common.log.constants.LogConstants;
+import com.chaoxing.scaffold.common.log.entity.AccessLog;
+import com.chaoxing.scaffold.common.log.handler.AccessLogHandler;
 import com.chaoxing.scaffold.common.core.utils.IpUtils;
 import com.chaoxing.scaffold.common.core.utils.JsonUtils;
 import com.chaoxing.scaffold.common.core.utils.LogUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerMapping;
 
 import javax.servlet.http.HttpServletRequest;

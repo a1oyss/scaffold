@@ -1,11 +1,11 @@
 package com.chaoxing.scaffold.autoconfigure.idempotent;
 
-import com.chaoxing.common.idempotent.IdempotentAspect;
-import com.chaoxing.common.idempotent.key.generator.IdempotentKeyGenerator;
-import com.chaoxing.common.idempotent.key.generator.impl.DefaultIdempotentKeyGenerator;
-import com.chaoxing.common.idempotent.key.store.IdempotentKeyStore;
-import com.chaoxing.common.idempotent.key.store.impl.InMemoryIdempotentKeyStore;
-import com.chaoxing.common.idempotent.key.store.impl.RedisIdempotentKeyStore;
+import com.chaoxing.scaffold.common.idempotent.IdempotentAspect;
+import com.chaoxing.scaffold.common.idempotent.key.generator.IdempotentKeyGenerator;
+import com.chaoxing.scaffold.common.idempotent.key.generator.impl.DefaultIdempotentKeyGenerator;
+import com.chaoxing.scaffold.common.idempotent.key.store.IdempotentKeyStore;
+import com.chaoxing.scaffold.common.idempotent.key.store.impl.InMemoryIdempotentKeyStore;
+import com.chaoxing.scaffold.common.idempotent.key.store.impl.RedisIdempotentKeyStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

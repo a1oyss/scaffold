@@ -1,14 +1,12 @@
 package com.chaoxing.scaffold.autoconfigure.log;
 
-import com.chaoxing.common.log.filter.AccessLogFilter;
-import com.chaoxing.common.log.handler.AccessLogHandler;
-import com.chaoxing.scaffold.autoconfigure.log.logImpl.DefaultAccessLogHandlerImpl;
+import com.chaoxing.scaffold.common.log.filter.AccessLogFilter;
+import com.chaoxing.scaffold.common.log.handler.AccessLogHandler;
 import com.chaoxing.scaffold.autoconfigure.log.properties.AccessLogProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
