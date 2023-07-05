@@ -46,10 +46,10 @@ public class NullSerializerProvider extends DefaultSerializerProvider {
 	 */
 	private final JsonSerializer<Object> nullMapJsonSerializer = new NullMapJsonSerializer();
 
-	/**
-	 * null 字符串转 ''
-	 */
-	private final JsonSerializer<Object> nullStringJsonSerializer = new NullStringJsonSerializer();
+//	/**
+//	 * null 字符串转 ''
+//	 */
+//	private final JsonSerializer<Object> nullStringJsonSerializer = new NullStringJsonSerializer();
 
 	@Override
 	public DefaultSerializerProvider copy() {
@@ -67,10 +67,10 @@ public class NullSerializerProvider extends DefaultSerializerProvider {
 	@Override
 	public JsonSerializer<Object> findNullValueSerializer(BeanProperty property) throws JsonMappingException {
 		JavaType propertyType = property.getType();
-		if (isStringType(propertyType)) {
-			return this.nullStringJsonSerializer;
-		}
-		else if (isArrayOrCollectionTrype(propertyType)) {
+//		if (isStringType(propertyType)) {
+//			return this.nullStringJsonSerializer;
+//		}
+		if (isArrayOrCollectionTrype(propertyType)) {
 			return this.nullArrayJsonSerializer;
 		}
 		else if (isMapType(propertyType)) {
